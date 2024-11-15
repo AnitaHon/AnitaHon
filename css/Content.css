@@ -1,0 +1,151 @@
+
+body{
+    background-color: #efeee8;
+}
+@font-face {
+    font-family: 'MetroPhotograph';
+    src: url('/Assets/Font/MetroPhotograph-DemoVersion-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Part2-1{
+    display: none;
+}
+
+.content {
+    display: flex;           /* Enable flexbox layout */
+    
+}
+
+.Part1 {
+    flex: 1;                 /* Part1 will take up available space */
+    max-width: 60%;      
+    margin-top: 5%;    /* Optional: restrict the max width of the video */
+}
+
+.Part1 img{
+    width: 100%;
+
+}
+
+.glide {
+    flex: 1;                 /* Part1 will take up available space */
+    width: 100vw;      
+    margin-bottom: 5%;
+    
+}
+.glide li{
+    width: 100%;            /* Make image take up full width */
+    height: auto;   
+}
+
+.glide img{
+    width: 100%;            /* Make image take up full width */
+    height: auto;           /* Adjust height automatically to maintain aspect ratio */
+    object-fit: contain;     
+}
+
+
+
+#close-btn {
+    position: absolute;      /* Position relative to the body */
+    top: 20px;               /* 20px from the top of the page */
+    right: 20px;             /* 20px from the right of the page */
+    background: transparent; /* Make background transparent */
+    border: none;            /* Remove default border */
+    font-size: 40px;         /* Size of the cross icon */
+    color: #d0cfcb;          /* Color of the cross */
+    cursor: pointer;        /* Pointer cursor when hovering over */
+    text-decoration: none;   /* Remove underline for links */
+}
+
+#close-btn a, #arrow a  {
+    color: inherit;          /* Inherit color from the parent */
+    text-decoration: none;   /* Remove underline from link */
+}
+
+/* Hover effect for the close button */
+#close-btn:hover, #arrow:hover {
+    color: #e9896a;          /* Color change on hover */
+}
+
+.Part2{
+    max-width: 40%;
+    padding: 5%;
+    display: block;
+}
+
+.content h1{
+    font-size: 60px;
+    font-family: 'MetroPhotograph', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+.content h2{
+    font-family: "Caudex", serif;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+.content p{
+    padding-bottom: 5%;
+    font-family: "Caudex", serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+video {
+    width: 100%; /* Make the video responsive */
+    height: 100%; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the video */
+}
+
+#arrow {
+    width: auto;                 /* Adjust width based on content */
+    height: auto;                /* Adjust height based on content */
+    position: fixed;             /* Fix the position relative to the viewport */
+    bottom: 5%;                  /* 5% from the bottom of the page */
+    right: 5%;                   /* 5% from the right of the page */
+    background: transparent;     /* Make background transparent */
+    border: none;                /* Remove default border */
+    font-size: 20px;             /* Size of the arrow icon */
+    color: #d0cfcb;              /* Color of the arrow */
+    cursor: pointer;            /* Pointer cursor on hover */
+    text-decoration: none;       /* Remove underline from the link */
+}
+
+#arrow p {
+    font-size: 20px;
+    margin: 0 10px;              /* Adjust margin to space text from the icon */
+}
+
+#arrow i {
+    font-size: 20px;             /* Size of the arrow icon */
+    margin-left: 5px;            /* Small space between text and icon */
+}
+
+#arrow a {
+    display: flex;               /* Use Flexbox to align text and icon horizontally */
+    align-items: center;         /* Vertically align text and icon */
+    text-decoration: none;       /* Remove text decoration */
+}
+
+@media only screen and (max-width: 700px) {
+    .Part1 {
+        flex: 1;                 /* Part1 will take up available space */
+        max-width: 100%;      
+        margin-top: 5%;    /* Optional: restrict the max width of the video */
+    }
+
+  .Part2{
+        display: none;
+    }
+
+    .Part2-1{
+        display: block;
+    }
+}

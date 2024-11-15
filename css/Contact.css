@@ -1,0 +1,163 @@
+
+
+.Contact {
+    margin-top: 5%;
+    background-color: #efeee8;
+    position: relative; /* Positioning context for the form */
+}
+
+
+    .contact-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative; /* Allows for absolute positioning inside */
+    height: auto; /* Make sure the container takes up full height of the viewport */
+}
+.contact-container h1{
+    font-family: 'MetroPhotograph', sans-serif;
+}
+.contact-container form{
+    font-family: "Caudex", serif;
+}
+
+#GetInTouch {
+    position: relative; 
+    width: 60%;
+    height: auto;
+    left: -20%;  
+    overflow: hidden;
+    animation: rotate 50s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(360deg); /* Start at 360 degrees */
+    }
+    to {
+      transform: rotate(0deg); /* End at 0 degrees */
+    }
+}
+
+
+
+/* Styling for the contact form */
+.contact-form {
+    position: absolute;
+    top: 50%; /* Center the form vertically */
+    left: 50%; /* Center the form horizontally */
+    transform: translate(-50%, -50%); /* Precisely center the form */
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent white background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 3; /* Ensure the form stays above the rotating image */
+}
+
+.contact-form h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.contact-form h2 {
+    font-family: "Caudex", serif;
+    text-align: center;
+}
+.contact-form a {
+    color: #143f6b;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input,
+textarea {
+    background-color: rgba(255, 255, 255, 0.677);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #58514c;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    font-family: "Caudex", serif;
+    padding: 15px;
+    background-color:#143f6b;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+button:hover {
+    background-color: #e9896a;
+    color: #143f6b;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 2200px) {
+    .contact-container {
+        margin: 0%;
+    }
+ 
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .contact-form{
+        margin-top: 20%;
+    }
+ 
+}
+
+@media only screen and (max-width: 900px) {
+    .text h1 {
+        font-size: 100px;
+    }
+
+    .contact-form{
+        margin: 15%;
+        margin-top: 40%;
+    }
+
+ 
+}
+@media only screen and (max-width: 500px) {
+ 
+    .contact-form {
+        width: 50%; 
+    }
+
+    input,textarea, button {
+    width: 80%; 
+        height: 80%;
+}
+  
+
+ 
+}

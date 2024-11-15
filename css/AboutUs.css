@@ -1,0 +1,234 @@
+.AboutMe{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 20% ;
+    margin-right: 20%;
+}
+
+.AboutMe h1{
+    font-size: 80px;
+    font-family: 'MetroPhotograph', sans-serif;
+}
+.AboutMe h3{
+    margin-top: 2%;
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: "Caudex", serif;
+    text-align: center;
+    transition: font-size 0.4s ease, color 0.4s ease;
+}
+/*--------------------------------------------------------------------------*/
+.AboutUs {
+    background-color: #143f6b;
+    width: 100vw;
+    height: 80vh;
+    position: relative; 
+    z-index: 0;
+    display: flex;       
+}
+
+.square {
+    width: 52vw;
+    height: 120%;
+    position: absolute;
+    bottom: 80px;
+    left: 600px; 
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.AboutUs h1 {
+    margin-top: 3%;
+    width: 50vw;
+    font-family: 'MetroPhotograph', sans-serif;
+    font-size: 45px;
+    font-style: bold;
+    position: relative;
+    color: #f0eee8;
+    letter-spacing: 2px; 
+}
+/*-----------------------------------Technical---------------------------------------*/
+#Technical{
+    margin-top: 5%;
+}
+.star2 {
+    margin-right:2%;
+    height: 15px;
+    color: #f0eee8;
+}
+
+#RList{
+    margin-top: 3%;
+    width: 60%;
+    font-family: "Cormorant", serif;
+    font-size: 20px;
+    letter-spacing: 1px; 
+    text-align: start;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+#RList h3{
+    transition: font-size 1s ease, color 1s ease;
+}
+
+#RList h3:hover {
+    font-size: 27px; /* Increase font size on hover */
+    color: #e9896a; /* Change text color */
+}
+
+.reason{ 
+    margin-left: 20%;
+    height: 100%;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; 
+}
+
+/*-----------------------------------Software---------------------------------------*/
+#Software{
+    margin-top: 3%;
+}
+.app{
+    margin-top: 2%;
+    
+}
+.app img{
+    margin: 1%;
+    height: 40px;
+    width: auto;
+    transition: transform 1s ease, filter 1s ease; 
+}
+.app img:hover {
+    transform: scale(1.5); /* Grow the image by 20% */
+    filter: sepia(1) saturate(7) hue-rotate(-60deg) brightness(0.85);
+}
+
+#Language{
+    margin-top: 2%;
+    letter-spacing: 1px; 
+    display: flex; /* Use flexbox to arrange items in a row */
+    align-items: center; /* Vertically center the items */
+    gap: 10px;
+}
+#Language h3 {
+    color: #ffffff;
+    font-family: "Cormorant", serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: flex; 
+    align-items: center;
+    margin: 0; 
+}
+
+#Language img {
+    margin-right: 5px; /* Space between the image and text */
+    height: 20px; /* Controls the image size */
+    vertical-align: middle; /* Vertically align the image with the text */
+}
+
+#List{
+    height: 120vh;
+    background-image: url(/Assets/Pics/bg.jpg);
+    background-size: cover; 
+    background-position: center; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+
+
+
+.List{
+    margin: 5%;
+    width: 45vw;
+    height: 30vh;
+    background-color: rgba(237, 230, 221, 0.5);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    flex-direction: column;
+}
+
+.List h1{
+    padding: 5%;
+    font-size: 50px;
+    letter-spacing: 5px; 
+}
+
+.List h3{
+    letter-spacing: 2px; 
+    font-size: 20px;
+    margin-left: 15px ;
+    margin-right: 15px ;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+
+    .AboutUs {
+        object-fit: cover;
+        overflow: hidden;
+        height: 60vh;   
+    }
+
+    .square {
+        width: auto;
+        height: 100%;
+        bottom: 20px;
+        left: 300px; 
+}}
+
+@media only screen and (max-width: 900px) {
+    .AboutUs {
+        
+        height: 600px;}
+
+        .square {
+            bottom: 80px;
+            left: 100px; 
+    }
+    .reason{ 
+        margin-left: 10%;
+    }
+
+}
+@media only screen and (max-width: 700px) {
+    .square {
+        width: auto;
+        height: 100%;
+        bottom: 100px;
+        left: 0px; }
+}
+@media only screen and (max-width: 550px) {
+    .AboutMe h3{
+        font-size: 15px;}
+
+        .square {
+            width: auto;
+            height: 100%;
+            bottom: 60px;
+            left: 10px; 
+    }
+    .reason{ 
+        margin-left: 5%;
+    }
+    #AboutUs{
+        height: 40vh;
+    }
+    #AboutUs h1{
+        font-size: 30px;
+    }
+
+    #RList, .List h3, #Language h3{
+        font-size: 15px;
+    }
+    .app img{
+        height: 20px;
+       
+    }
+}
+

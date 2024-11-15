@@ -1,0 +1,140 @@
+
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+html {
+  scroll-behavior: smooth; 
+}
+body{
+  background-color: #efeee8;
+
+}
+
+header {
+  position: sticky; 
+  top: 0; 
+  width: 100%;
+  height: 70px;
+  background-color: #efeee8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 4;
+  }
+
+#header {
+  margin: 50px;
+  display: flex; 
+  align-items: center;  
+  justify-content: space-between;
+  width: 100%;  
+
+}
+
+#Links{
+  font-family: "Caudex", serif;
+  display: flex;  
+  align-items: center; 
+  justify-content: space-between; 
+  width: 40%;  
+  }
+
+.navLinks {
+  text-decoration: none;
+  color: black;
+  transition: transform 1s ease, color 1s ease; 
+}
+  
+.navLinks:hover {
+  color: #e9896a;
+  transform: scale(1.2);
+}
+
+#logo,
+#burger {
+  width: auto;
+  height: 60px;
+  }
+
+
+  @font-face {
+    font-family: 'MetroPhotograph';
+    src: url('/Assets/Font/MetroPhotograph-DemoVersion-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@media only screen and (max-width: 900px) {
+  #Links {
+    display: none; 
+  }
+
+  #header {
+    justify-content: center; 
+    margin: 0; 
+  }
+
+  #logo {
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.work-item a {
+  display: block; /* Make the anchor tag a block element */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+}
+
+
+
+
+#footer {
+  position: fixed;
+  bottom: 10px; /* Distance from the bottom */
+  right: 10px; /* Distance from the right */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Space between the icons */
+  z-index: 1000; /* Ensure it's on top of other content */
+
+}
+
+/* Style each icon container */
+#footer .icon {
+  position: relative;
+  display: inline-block;
+}
+
+/* Initially hide the text */
+#footer .icon p {
+  display: none;
+  margin-right: 10px; /* Space between text and icon */
+  font-size: 14px; /* Font size of the text */
+  color: #fff; /* Text color */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 1s ease, margin-right 1s ease;
+}
+
+/* Show the text when hovering over the icon */
+
+
+/* Optionally, you can add a transition for the icon images as well */
+#footer .icon img {
+  width: auto; /* Icon size */
+  height: 30px;
+  transition: transform 1s ease , opacity 1s ease;
+  opacity: 0.5;
+}
+
+/* Optionally, add a hover effect to the icons */
+#footer .icon:hover img {
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+  opacity: 1;
+}

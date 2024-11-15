@@ -1,0 +1,156 @@
+.glide__slide {
+    display: block;        
+    justify-content: center; 
+    align-items: center;  
+    width: 60vw; 
+    height: 100vh; 
+    overflow: hidden; 
+    }
+  
+  .glide__slide img {
+    max-width: 400px;
+    height: 100%; 
+    object-fit: cover;
+  }
+
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Animation {
+    display: flex;
+  }
+
+  #MyWorks{
+    font-family: 'MetroPhotograph', sans-serif;
+    text-align: center;
+    letter-spacing: 2px; 
+    font-size: 80px;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+.container {
+  text-align: center;
+}
+
+.work-section h1:hover {
+  background-color: #143f6b;
+  transform: scale(1.2);
+}
+
+
+.work-section h1{
+  white-space: normal; /* Allow normal wrapping */
+  overflow-wrap: break-word; 
+  font-family: "Caudex", serif;
+  font-size: 40px;
+  background-color: #e9896a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 30px;
+  cursor: pointer;
+  border-radius: 0 30px;
+  transition: transform 1s ease, color 1s ease; 
+  margin: 5%;
+}
+
+.work-section h2{
+  font-family: 'MetroPhotograph', sans-serif;
+  font-size: 280%;
+  max-width: 90%;
+  white-space: normal; /* Allow normal wrapping */
+  overflow-wrap: break-word; /* Prevents word overflow */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 30px;
+  cursor: pointer;
+  border-radius: 0 30px;
+  transition: transform 1s ease, color 1s ease; 
+  margin: 5%;
+}
+
+
+
+.worksList {
+  display: flex;               /* Flexbox to align items in a row */
+  justify-content: space-around; /* Distribute items with space around */
+}
+
+.work-item {
+  margin: 2%;                  /* Margin around each item */
+  position: relative; 
+  overflow: hidden; 
+  width: 22vw;                 /* Set a fixed width for the square boxes */
+  height: 22vw;                /* Make the height equal to width for square shape */
+  display: flex;               /* Use flex to align content */
+       /* Vertically center content */
+  justify-content: center;     /* Horizontally center content */
+}
+
+.worksList img {
+  width: 100%;                 /* Ensure the image takes up the full width */
+  height: auto;                /* Ensure the image takes up the full height */
+  object-fit: cover;           /* Ensure the image fills the box without stretching */
+  object-position: center;     /* Center the image in case it gets cropped */
+  display: block;      /* Ensure the image is treated as a block element */
+}
+
+/* If the images are still too small to fill the container, you can try to scale them properly */
+.work-item img {
+  min-width: 100%;             /* Force the image to fill 100% of the width */
+  min-height: 100%;            /* Force the image to fill 100% of the height */
+  object-fit: cover;           /* Ensure the image completely covers the container */
+  object-position: center;     /* Center the image to avoid clipping */
+}
+
+
+/* Optional: Add a hover effect for .work-item */
+.work-item:hover {
+  transform: scale(1.05);      /* Slightly scale up the item on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(233, 137, 106, 0.8); /* Background for text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  overflow: hidden;
+  
+  
+}
+
+.content h1 {
+  font-size: 20px;              /* Reduce font size for better fit */
+  font-family: 'MetroPhotograph', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.content p {
+  max-width: 95%;
+  font-size: 150%;
+  font-family: "Cormorant", serif;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  white-space: normal; /* Allow normal wrapping */
+  overflow-wrap: break-word; /* Prevents word overflow */
+}
+
+.work-item:hover .content {
+  opacity: 1;
+}
