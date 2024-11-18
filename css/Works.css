@@ -158,14 +158,15 @@
 
 @media only screen and (max-width: 700px) {
     
-.worksList {
-    display: block;
-}
- .glide__slide img {
-    max-width: 400px;
-    height: 120%; 
-
+  .worksList {
+      display: block;
+      gap: 5px;
   }
 
+  .glide__slide img {
+      max-width: 400px;
+      height: 120%; 
+  }
+  
     
-}
+  }
