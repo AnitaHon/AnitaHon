@@ -276,10 +276,9 @@
                 <img src="/AnitaHon/Assets/Pics/GetInTouch.png" alt="GetInTouch" id="GetInTouch" >
             </div>
 
-            <input type="hidden" name="access_key" value="fd0b81b6-358d-41de-960f-d051e185b7ea">
             <h1>Get In Touch!</h1>
             <h2><a href="mailto:anitahonck1015@gmail.com">anitahonck1015@gmail.com</h2></a>
-
+            <input type="hidden" name="access_key" value="fd0b81b6-358d-41de-960f-d051e185b7ea">
             <div class="contact-form" >
             <form action="#" method="post">
                 <label for="name">Your Name</label>
@@ -382,27 +381,7 @@
 
 
 
-<script>
-    document.querySelector('.contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        const formData = new FormData(this);
-        
-        fetch('/submit', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            alert('Message sent successfully!');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Failed to send message.');
-        });
-    });
-    </script>
+
  
 
 
