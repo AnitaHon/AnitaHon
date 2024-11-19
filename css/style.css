@@ -92,11 +92,10 @@ header {
 
 
 #footer {
-  position: fixed;
+  position: block;
   bottom: 10px; /* Distance from the bottom */
   right: 10px; /* Distance from the right */
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 30px; /* Space between the icons */
   z-index: 1000; /* Ensure it's on top of other content */
