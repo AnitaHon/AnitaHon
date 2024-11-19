@@ -57,7 +57,7 @@ body{
 .Part2 {
     max-width: 40%;
     padding: 5%;
-    display: fixed; 
+    display: block; 
     top: 0%;/* Ensure it is visible on larger screens */
 }
 
