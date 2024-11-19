@@ -37,13 +37,30 @@ body{
 }
 
 .glide__track {
-    width: 100%;               /* Ensure track takes up full width */
+    width: 100% !important;  /* Ensure the track fills the container */
+    overflow: hidden;        /* Prevent slides from overflowing */
 }
 
 .glide__slides {
-    width: 100%;               /* Make sure each slide takes up full width of the track */
+    display: flex;           /* Lay slides out horizontally */
+    width: 100%;             /* Ensure slides take up 100% width of the track */
 }
 
+.glide__slide {
+    width: 100%;             /* Ensure each slide takes the full width */
+}
+
+/* Image inside slide */
+.glide__slides img {
+    width: 100%;             /* Make sure the image covers the slide */
+    height: auto;            /* Maintain aspect ratio */
+    object-fit: cover;       /* Ensure images fill the area without distortion */
+}
+
+/* Ensure flexbox layout doesn't conflict */
+.glide__slides {
+    display: block;          /* Prevent any unexpected flexbox layout */
+}
 
 #close-btn {
     position: absolute;      /* Position relative to the body */
