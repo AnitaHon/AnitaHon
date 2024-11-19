@@ -68,7 +68,16 @@
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+    <script>
+        anime({
+            targets: 'abc',
+            translateX: [
+                { value: 0, duration: 0 }, // Start from the left edge
+                { value: '50vw', duration: 2000 } // Move to the right edge
+            ],
+            easing: 'easeInOutQuad'})
+</script>
 
 </body>
 </html>
