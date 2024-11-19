@@ -29,15 +29,20 @@ body{
 
 }
 
-.glide {
-    overflow: hidden; /* hides the overflow */
+.content {
+    display: flex;             /* Enable flexbox layout */
+    flex-direction: row;       /* Align items horizontally */
+    justify-content: flex-start; /* Align content to the start of the flex container */
+    align-items: center;       /* Vertically center the slides */
 }
 
-.glide img {
-    width: 100%; /* or a specific width */
-    height: auto; /* maintain aspect ratio */
+.glide__track {
+    width: 100%;               /* Ensure track takes up full width */
 }
 
+.glide__slides {
+    width: 100%;               /* Make sure each slide takes up full width of the track */
+}
 
 
 #close-btn {
