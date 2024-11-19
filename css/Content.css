@@ -14,10 +14,7 @@ body{
 }
 
 /* Ensure proper layout for the content area */
-.content {
-    display: flex; /* Enable flexbox layout */
-    flex-wrap: wrap; /* Allow elements to wrap */
-}
+
 
 /* Ensure .Part1 takes up the right amount of space */
 .Part1 {
