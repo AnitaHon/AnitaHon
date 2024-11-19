@@ -57,7 +57,8 @@ body{
 .Part2 {
     max-width: 40%;
     padding: 5%;
-    display: block; /* Ensure it is visible on larger screens */
+    display: block; 
+    top: 0%;/* Ensure it is visible on larger screens */
 }
 
 /* Ensure Part2-1 appears only on smaller screens */
@@ -65,22 +66,6 @@ body{
     display: none; /* Hide by default */
 }
 
-@media only screen and (max-width: 700px) {
-    /* On smaller screens, Part1 takes full width */
-    .Part1 {
-        max-width: 100%;
-    }
-
-    /* On smaller screens, hide Part2 */
-    .Part2 {
-        display: none;
-    }
-
-    /* On smaller screens, show Part2-1 */
-    .Part2-1 {
-        display: block;
-    }
-}
 
 /* Styling for the close button */
 #close-btn {
