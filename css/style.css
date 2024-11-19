@@ -68,7 +68,7 @@ header {
 @media only screen and (max-width: 900px) {
   #Links {
     display: none; 
-  }
+  } 
 
   #header {
     justify-content: center; 
