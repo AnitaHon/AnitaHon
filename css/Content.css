@@ -30,7 +30,7 @@ body{
 }
 
 .glide {
-    flex: 1;                 /* Part1 will take up available space */
+         /* Part1 will take up available space */
     width: 100vw;      
     margin-bottom: 5%;
     
