@@ -13,140 +13,117 @@ body{
     display: none;
 }
 
+/* Ensure proper layout for the content area */
 .content {
-    display: flex;           /* Enable flexbox layout */
-    
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow elements to wrap */
 }
 
+/* Ensure .Part1 takes up the right amount of space */
 .Part1 {
-    flex: 1;                 /* Part1 will take up available space */
-    max-width: 60%;      
-    margin-top: 5%;    /* Optional: restrict the max width of the video */
+    flex: 1;
+    max-width: 60%; /* Adjust max width for larger screens */
+    margin-top: 5%;
 }
 
-.Part1 img{
+/* Ensure images in Part1 fill their container */
+.Part1 img {
     width: 100%;
-
+    height: auto;
 }
 
-.content {
-    display: flex;             /* Enable flexbox layout */
-    flex-direction: row;       /* Align items horizontally */
-    justify-content: flex-start; /* Align content to the start of the flex container */
-    align-items: center;       /* Vertically center the slides */
-}
-
+/* Styling for the glide carousel (fixed issues with .glide__slides) */
 .glide__track {
-    width: 100% !important;  /* Ensure the track fills the container */
-    overflow: hidden;        /* Prevent slides from overflowing */
+    width: 100% !important;
+    overflow: hidden;
 }
 
 .glide__slides {
-    display: flex;           /* Lay slides out horizontally */
-    width: 100%;             /* Ensure slides take up 100% width of the track */
+    display: flex;
+    width: 100%;
 }
 
 .glide__slide {
-    width: 100%;             /* Ensure each slide takes the full width */
+    flex: 0 0 100%; /* Ensure each slide takes 100% width of the track */
 }
 
-/* Image inside slide */
 .glide__slides img {
-    width: 100%;             /* Make sure the image covers the slide */
-    height: auto;            /* Maintain aspect ratio */
-    object-fit: cover;       /* Ensure images fill the area without distortion */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-/* Ensure flexbox layout doesn't conflict */
-.glide__slides {
-    display: block;          /* Prevent any unexpected flexbox layout */
-}
-
-#close-btn {
-    position: absolute;      /* Position relative to the body */
-    top: 20px;               /* 20px from the top of the page */
-    right: 20px;             /* 20px from the right of the page */
-    background: transparent; /* Make background transparent */
-    border: none;            /* Remove default border */
-    font-size: 40px;         /* Size of the cross icon */
-    color: #d0cfcb;          /* Color of the cross */
-    cursor: pointer;        /* Pointer cursor when hovering over */
-    text-decoration: none;   /* Remove underline for links */
-}
-
-#close-btn a, #arrow a  {
-    color: inherit;          /* Inherit color from the parent */
-    text-decoration: none;   /* Remove underline from link */
-}
-
-/* Hover effect for the close button */
-#close-btn:hover, #arrow:hover {
-    color: #e9896a;          /* Color change on hover */
-}
-
-.Part2{
+/* Hide Part2 on smaller screens */
+.Part2 {
     max-width: 40%;
     padding: 5%;
-    display: block;
+    display: block; /* Ensure it is visible on larger screens */
 }
 
-.content h1{
-    font-size: 60px;
-    font-family: 'MetroPhotograph', sans-serif;
-    color: rgb(0, 0, 0);
-    margin-top: 5%;
-    margin-bottom: 0%;
+/* Ensure Part2-1 appears only on smaller screens */
+.Part2-1 {
+    display: none; /* Hide by default */
 }
 
-.content h2{
-    font-family: "Caudex", serif;
-    font-size: 30px;
-    margin-top: 5%;
-    margin-bottom: 0%;
-}
-.content p{
-    padding-bottom: 5%;
-    font-family: "Caudex", serif;
-    font-size: 20px;
-    margin: 0;
-}
+@media only screen and (max-width: 700px) {
+    /* On smaller screens, Part1 takes full width */
+    .Part1 {
+        max-width: 100%;
+    }
 
+    /* On smaller screens, hide Part2 */
+    .Part2 {
+        display: none;
+    }
 
-video {
-    width: 100%; /* Make the video responsive */
-    height: 100%; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below the video */
+    /* On smaller screens, show Part2-1 */
+    .Part2-1 {
+        display: block;
+    }
 }
 
+/* Styling for the close button */
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: #d0cfcb;
+    cursor: pointer;
+}
+
+/* Styling for the next project arrow */
 #arrow {
-    width: auto;                 /* Adjust width based on content */
-    height: auto;                /* Adjust height based on content */
-    position: fixed;             /* Fix the position relative to the viewport */
-    bottom: 5%;                  /* 5% from the bottom of the page */
-    right: 5%;                   /* 5% from the right of the page */
-    background: transparent;     /* Make background transparent */
-    border: none;                /* Remove default border */
-    font-size: 20px;             /* Size of the arrow icon */
-    color: #d0cfcb;              /* Color of the arrow */
-    cursor: pointer;            /* Pointer cursor on hover */
-    text-decoration: none;       /* Remove underline from the link */
+    width: auto;
+    height: auto;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #d0cfcb;
+    cursor: pointer;
 }
 
 #arrow p {
     font-size: 20px;
-    margin: 0 10px;              /* Adjust margin to space text from the icon */
+    margin: 0 10px;
 }
 
 #arrow i {
-    font-size: 20px;             /* Size of the arrow icon */
-    margin-left: 5px;            /* Small space between text and icon */
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 #arrow a {
-    display: flex;               /* Use Flexbox to align text and icon horizontally */
-    align-items: center;         /* Vertically align text and icon */
-    text-decoration: none;       /* Remove text decoration */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
+
 
 .gg{
     gap: 10px;
