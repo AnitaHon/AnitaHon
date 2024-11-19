@@ -29,22 +29,7 @@ body{
 
 }
 
-.glide {
-         /* Part1 will take up available space */
-    width: 100vw;      
-    margin-bottom: 5%;
-    
-}
-.glide li{
-    width: 100%;            /* Make image take up full width */
-    height: auto;   
-}
 
-.glide img{
-    width: 100%;            /* Make image take up full width */
-    height: auto;           /* Adjust height automatically to maintain aspect ratio */
-    object-fit: contain;     
-}
 
 
 
