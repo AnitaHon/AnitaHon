@@ -123,6 +123,16 @@
         new Glide('.glide',config).mount()
     </script>
 
+
+<script>import Glide from '@glidejs/glide';
+    import anime from 'animejs';
+    
+    new Glide('.glide').mount();
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        new Glide('.glide').mount();
+    });</script>
+
 <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
 <script>
     anime({
