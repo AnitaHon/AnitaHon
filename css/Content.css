@@ -36,7 +36,6 @@ body{
     
 }
 .glide li{
-    padding: 5%;
     width: 100%;            /* Make image take up full width */
     height: auto;   
 }
