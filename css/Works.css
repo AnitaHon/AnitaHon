@@ -167,6 +167,8 @@
       max-width: 400px;
       height: 120%; 
   }
-  
+  .glide__arrow {
+    width: 10%;
+      height:10%;
     
   }
