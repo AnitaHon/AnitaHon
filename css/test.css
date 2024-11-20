@@ -1,1 +1,9 @@
 
+.glide {
+    overflow: hidden; /* hides the overflow */
+}
+
+.glide img {
+    width: 100%; /* or a specific width */
+    height: auto; /* maintain aspect ratio */
+}
