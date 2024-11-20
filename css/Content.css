@@ -30,6 +30,7 @@ body{
 }
 
 .glide {
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
