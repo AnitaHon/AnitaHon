@@ -15,6 +15,17 @@ body{
     align-items: center;
     padding: 15px;
 }
+.glide__slide {
+    flex: 0 0 100%; /* Each slide should take 100% of the container */
+    display: flex;
+    justify-content: center; /* Center the slide content horizontally */
+    align-items: center; /* Center the slide content vertically */
+}
+
+.glide__slides img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;}
 
 .Part2-1{
     display: none;
@@ -172,7 +183,7 @@ video {
     .Part1 {
         flex: 1;                 /* Part1 will take up available space */
         max-width: 100%;      
-        margin-top: 5%;    /* Optional: restrict the max width of the video */
+        margin-top: 5%;    
     }
 
   .Part2{
