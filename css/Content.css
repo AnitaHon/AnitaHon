@@ -161,6 +161,9 @@ video {
     }
 
     .Part2-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         display: block;
     }
 }
