@@ -36,12 +36,10 @@ body{
     align-items: center;
     overflow: hidden; /* hides the overflow */
     margin: 5%;
-
 }
 
 .glide img {
-    position: absolute;
-    top: 50%; left: 50%;
+
     margin: 0 0;
     background-position: center center;
     display: flex;
