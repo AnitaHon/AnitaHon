@@ -118,33 +118,16 @@
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
         const config = {
-    type: 'carousel',
-    perView: window.innerWidth <= 700 ? 1 : 1, // Ensure perView is set correctly for mobile devices
-}
+        type: 'carousel',
+        perView: 1
+    }
 
-new Glide('.glide', config).mount();
+    new Glide('.glide', config).mount();
     </script>
 
 
-<script>import Glide from '@glidejs/glide';
-    import anime from 'animejs';
-    
-    new Glide('.glide').mount();
-    
-    document.addEventListener('DOMContentLoaded', () => { 
-        new Glide('.glide').mount();
-    });</script>
-
 <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
-<script>
-    anime({
-        targets: 'abc',
-        translateX: [
-            { value: 0, duration: 0 }, // Start from the left edge
-            { value: '50vw', duration: 2000 } // Move to the right edge
-        ],
-        easing: 'easeInOutQuad'})
-</script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
