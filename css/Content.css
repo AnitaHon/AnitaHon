@@ -8,7 +8,11 @@ body{
     font-weight: normal;
     font-style: normal;
 }
-
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .Part2-1{
     display: none;
 }
