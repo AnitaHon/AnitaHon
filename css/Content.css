@@ -15,7 +15,11 @@ body{
     align-items: center;
     padding: 15px;
 }
-
+.glide {
+    position: relative;
+    width: 100%; /* Make the carousel take full width */
+    overflow: hidden; /* Hide the overflowed part */
+}
 
 .Part2-1{
     display: none;
