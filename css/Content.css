@@ -60,6 +60,11 @@ body{
     object-position: center; 
 }
 
+.glide  img:hover {
+    transform: scale(1.05);      /* Slightly scale up the item on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+
 
 #close-btn {
     position: absolute;      /* Position relative to the body */
