@@ -9,11 +9,6 @@ body{
 }
 
 .glide {
-    position: relative;
-    width: 100%; /* Make the carousel take full width */
-    overflow: hidden; /* Hide the overflowed part */
-}
-.glide {
     overflow: hidden; /* hides the overflow */
 }
 
