@@ -16,6 +16,7 @@
 #Home1{
     border: 1px solid rgb(0, 0, 0); 
     padding: 10px; 
+    display: flex; 
     flex-direction: column;
     justify-items: center; 
     align-items: center;
@@ -30,7 +31,6 @@
     letter-spacing: 2px; 
 }
 .finger{
-    width: 40%; /* Set to a percentage of the parent */
     max-width: 100%; /* Prevent exceeding parent width */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensures it behaves like a block element */
@@ -48,6 +48,7 @@
 }
 
 #Home1 > div {
+    margin: 10%;
     display: flex; /* Use Flexbox for the stars and text */
     align-items: center; /* Align items vertically in the center */
 }
