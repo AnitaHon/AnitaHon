@@ -50,7 +50,15 @@ body{
     width: 100%;
 
 }
+.container{
+    height: 100hv;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 
+}
 .glide {
     overflow: hidden; /* hides the overflow */
 }
