@@ -24,9 +24,7 @@ body{
 }
 
 .Part1 img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     width: 100%;
 
 }
@@ -40,6 +38,9 @@ body{
 }
 
 .glide img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%; /* or a specific width */
     height: auto; /* maintain aspect ratio */
 }
