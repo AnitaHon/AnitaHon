@@ -54,6 +54,9 @@ body{
     height: auto;
 }
 
+.glide__slides li{
+    width: 55%;
+}
 
 .glide__slides img {
     width: 100%;        

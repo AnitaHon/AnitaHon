@@ -98,14 +98,13 @@
 }
 
 .worksList img {
-  width: 100%;                 /* Ensure the image takes up the full width */
-  height: auto;                /* Ensure the image takes up the full height */
-  object-fit: cover;           /* Ensure the image fills the box without stretching */
-  object-position: center;     /* Center the image in case it gets cropped */
-  display: block;      /* Ensure the image is treated as a block element */
+  width: 100%;                
+  height: auto;               
+  object-fit: cover;          
+  object-position: center;     
+  display: block;      
 }
 
-/* If the images are still too small to fill the container, you can try to scale them properly */
 .work-item img {
   min-width: 100%;             /* Force the image to fill 100% of the width */
   min-height: 100%;            /* Force the image to fill 100% of the height */
