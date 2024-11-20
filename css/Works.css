@@ -161,6 +161,11 @@
 
 
 @media only screen and (max-width: 700px) {
+
+  .work-item {
+    width: 50vw;                 /* Set a fixed width for the square boxes */
+    height: 50vw;         /* Make the height equal to width for square shape */      /* Use flex to align content */
+  }
     
   .worksList {
       display: block;
