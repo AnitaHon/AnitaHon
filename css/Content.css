@@ -23,6 +23,7 @@ body{
 }
 
 .glide__slides img {
+    padding: 5%;
     width: 100%;                 /* Ensure the image takes up the full width */
   height: auto;                /* Ensure the image takes up the full height */
   object-fit: cover;           /* Ensure the image fills the box without stretching */
