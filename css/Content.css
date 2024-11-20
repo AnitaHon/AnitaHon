@@ -53,6 +53,7 @@ body{
 }
 
 .glide img {
+    justify-items: center;
     width: 100%; /* or a specific width */
     height: auto; /* maintain aspect ratio */
 }
