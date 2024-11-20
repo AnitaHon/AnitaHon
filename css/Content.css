@@ -28,7 +28,7 @@ body{
 
 }
 
-.glidee {
+.glide {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@ body{
     margin: 0 auto;
 }
 
-.glidee img {
+.glide img {
     width: 100%; /* or a specific width */
     height: auto; /* maintain aspect ratio */
 }
