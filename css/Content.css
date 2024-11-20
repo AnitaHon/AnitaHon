@@ -49,6 +49,7 @@ body{
 
 
 .glide {
+    gap: 5%;
     overflow: hidden; /* hides the overflow */
 }
 
