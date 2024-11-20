@@ -121,7 +121,10 @@
     <script>
         const config = {
         type: 'carousel',
-        perView: 1
+        perView: 1,
+        gap: 0,      // No gap between slides
+        focusAt: 'center',  // Focus on the center slide
+        autoplay: false,
     }
 
     new Glide('.glide', config).mount();
