@@ -23,9 +23,13 @@ body{
 }
 
 .glide__slides img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;}
+    width: 100%;                 /* Ensure the image takes up the full width */
+  height: auto;                /* Ensure the image takes up the full height */
+  object-fit: cover;           /* Ensure the image fills the box without stretching */
+  object-position: center;     /* Center the image in case it gets cropped */
+  display: block; 
+
+}
 
 .Part2-1{
     display: none;
