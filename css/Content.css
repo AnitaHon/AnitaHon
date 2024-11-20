@@ -32,9 +32,6 @@ body{
     margin-left: 5%;}
 
 .glide {
-
-    background-position: center center;
-    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden; /* hides the overflow */
