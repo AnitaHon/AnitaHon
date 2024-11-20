@@ -32,9 +32,7 @@ body{
     margin-left: 5%;}
 
 .glide {
-    position: absolute;
-top: 50%; left: 50%;
-margin: 0 0;
+
     background-position: center center;
     display: flex;
     justify-content: center;
@@ -46,8 +44,8 @@ margin: 0 0;
 
 .glide img {
     position: absolute;
-top: 50%; left: 50%;
-margin: 0 0;
+    top: 50%; left: 50%;
+    margin: 0 0;
     background-position: center center;
     display: flex;
     justify-content: center;
