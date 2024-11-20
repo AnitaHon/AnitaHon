@@ -7,6 +7,15 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+.container{
+    height: 100hv;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
 
 .Part2-1{
     display: none;
