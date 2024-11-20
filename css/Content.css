@@ -13,6 +13,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .Part2-1{
     display: none;
 }
@@ -42,6 +43,10 @@ body{
 .glide__slides {
     display: flex;
     width: 100%;
+}
+
+.glide__slide {
+    flex: 0 0 100%; /* Ensure each slide takes 100% width of the track */
 }
 
 .glide__slide {
