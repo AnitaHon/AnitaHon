@@ -34,7 +34,8 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden; /* hides the overflow */
-    margin: 0 auto;
+    margin: 5%;
+
 }
 
 .glide img {
