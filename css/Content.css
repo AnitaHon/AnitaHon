@@ -48,7 +48,8 @@ body{
     font-size: 40px;         /* Size of the cross icon */
     color: #d0cfcb;          /* Color of the cross */
     cursor: pointer;        /* Pointer cursor when hovering over */
-    text-decoration: none;   /* Remove underline for links */
+    text-decoration: none; 
+    z-index: 1000;  /* Remove underline for links */
 }
 
 #close-btn a, #arrow a  {
