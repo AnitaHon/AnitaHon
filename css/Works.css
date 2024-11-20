@@ -75,6 +75,11 @@
   margin: 5%;
 }
 
+#SeeMore{
+  font-size: 20px;
+  color: #a09e8e;
+}
+
 
 
 .worksList {
@@ -172,3 +177,4 @@
       height:10%;
     
   }
+}
