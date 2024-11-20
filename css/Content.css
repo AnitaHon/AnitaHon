@@ -48,22 +48,28 @@ body{
 }
 
 
-.glide {
-    gap: 5%;
-    overflow: hidden; /* hides the overflow */
+.glide__slides {
+    position: relative; /* So that we can control positioning of the img inside */
+    width: 100%;
+    height: 100%;
 }
 
-.glide img {
-    min-width: 100%;             /* Force the image to fill 100% of the width */
-    min-height: 100%;            /* Force the image to fill 100% of the height */
-    object-fit: cover;           /* Ensure the image completely covers the container */
-    object-position: center; 
+/* Ensure images fill their parent container */
+.glide__slides img {
+    width: 100%;        /* Make image stretch to fill the container */
+    height: 100%;       /* Stretch image to fit vertically */
+    object-fit: cover;  /* Ensure image covers the container without distortion */
 }
 
-.glide  img:hover {
-    transform: scale(1.05);      /* Slightly scale up the item on hover */
-    transition: transform 0.3s ease; /* Smooth transition */
-  }
+/* Optional: If you want to prevent overflow in case of large images */
+.container {
+    overflow: hidden;
+}
+
+/* Optional: If you want the images to always fit without cropping (contain) */
+.glide__slides img {
+    object-fit: contain; /* Prevents image cropping, but may not fill the container */
+}
 
 
 #close-btn {
