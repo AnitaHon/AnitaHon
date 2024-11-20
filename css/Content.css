@@ -29,9 +29,9 @@ body{
 }
 
 .content {
-    display: flex;           /* Enable flexbox layout */
-    
+    display: flex;         
 }
+
 .glider-track {
     margin: auto;
 }
@@ -90,9 +90,8 @@ body{
     text-decoration: none;   /* Remove underline from link */
 }
 
-/* Hover effect for the close button */
 #close-btn:hover, #arrow:hover {
-    color: #e9896a;          /* Color change on hover */
+    color: #e9896a;        
 }
 
 .Part2{
