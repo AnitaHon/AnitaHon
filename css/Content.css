@@ -54,9 +54,11 @@ body{
 }
 
 .glide img {
-    justify-items: center;
-    width: 100%; /* or a specific width */
-    height: auto; /* maintain aspect ratio */
+    width: 100%;                 /* Ensure the image takes up the full width */
+  height: auto;                /* Ensure the image takes up the full height */
+  object-fit: cover;           /* Ensure the image fills the box without stretching */
+  object-position: center;     /* Center the image in case it gets cropped */
+  display: block; 
 }
 
 
