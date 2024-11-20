@@ -8,14 +8,6 @@ body{
     font-style: normal;
 }
 
-.glide {
-    overflow: hidden; /* hides the overflow */
-}
-
-.glide img {
-    width: 100%; /* or a specific width */
-    height: auto; /* maintain aspect ratio */
-}
 
 
 .Part2-1{
@@ -54,14 +46,7 @@ body{
     width: 100%;
 
 }
-.container{
-    height: 100hv;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
+
 
 .glide {
     overflow: hidden; /* hides the overflow */
@@ -71,7 +56,6 @@ body{
     width: 100%; /* or a specific width */
     height: auto; /* maintain aspect ratio */
 }
-
 
 
 #close-btn {
