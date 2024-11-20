@@ -12,6 +12,20 @@ body{
     display: none;
 }
 
+body{
+    background-color: #efeee8;
+}
+@font-face {
+    font-family: 'MetroPhotograph';
+    src: url('/AnitaHon/Assets/Font/MetroPhotograph-DemoVersion-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Part2-1{
+    display: none;
+}
+
 .content {
     display: flex;           /* Enable flexbox layout */
     
@@ -19,7 +33,7 @@ body{
 
 .Part1 {
     flex: 1;                 /* Part1 will take up available space */
-    max-width: 55%;      
+    max-width: 60%;      
     margin-top: 5%;    /* Optional: restrict the max width of the video */
 }
 
@@ -28,23 +42,11 @@ body{
 
 }
 
-.imgList{
-    margin-left: 5%;}
-
 .glide {
-    justify-content: center;
-    align-items: center;
     overflow: hidden; /* hides the overflow */
-    margin: 5%;
 }
 
 .glide img {
-
-    margin: 0 0;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%; /* or a specific width */
     height: auto; /* maintain aspect ratio */
 }
