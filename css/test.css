@@ -7,3 +7,12 @@
     width: 100%; /* or a specific width */
     height: auto; /* maintain aspect ratio */
 }
+.container{
+    height: 100hv;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
