@@ -24,7 +24,7 @@
     display: flex;
   }
 
-  .MyWorks{
+  #MyWorks{
     font-family: 'MetroPhotograph', sans-serif;
     text-align: center;
     letter-spacing: 2px; 
@@ -33,7 +33,7 @@
     margin-top: 5%;
   }
 
-  #SeeMore{
+  .SeeMore{
     text-align: center;
     font-size: 20px;
     color: #a09e8e;
