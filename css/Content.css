@@ -20,6 +20,15 @@ body{
     width: 100%; /* Make the carousel take full width */
     overflow: hidden; /* Hide the overflowed part */
 }
+.glide {
+    overflow: hidden; /* hides the overflow */
+}
+
+.glide img {
+    width: 100%; /* or a specific width */
+    height: auto; /* maintain aspect ratio */
+}
+
 
 .Part2-1{
     display: none;
