@@ -115,15 +115,22 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-        const config = {
+        const glideConfig = {
         type: 'carousel',
         perView: 1,
         focusAt: 'center',  
 
-    }
+    };
+    // Wait for all images to load before initializing Glide 
+    window.addEventListener('load', function () {
+        new Glide('.glide', glideConfig). mount();
 
-    new Glide('.glide', config).mount();
-    </script>
+        window.dispatchEvent(new Event('resize'));
+        },100);
+    ;
+</script>
+    
+
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
