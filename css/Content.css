@@ -24,10 +24,12 @@ body{
 }
 
 .Part1 img{
-    margin-left: 5%;
     width: 100%;
 
 }
+
+.imgListimg {
+    margin-left: 5%;}
 
 .glide {
     position: absolute;
