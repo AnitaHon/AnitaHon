@@ -93,8 +93,7 @@ header {
 
 #footer {
   position: fixed;
-  bottom: 10px; /* Distance from the bottom */
-  right: 10px; /* Distance from the right */
+  
   display: flex;
   align-items: center;
   gap: 30px; /* Space between the icons */
