@@ -33,7 +33,7 @@
     <!---------------------------------------------- Header ----------------------------------------------->
     <header>
         <section id="header">
-            <div>
+           
                 <img  id="logo" src="/AnitaHon/Assets/Pics/Logo.png" alt="Logo">
 
                 <div id="footer">
@@ -405,18 +405,7 @@
         AOS.init();
     </script>
 <!---------------------------------------------- 4.cleave ----------------------------------------------->
-<script src="/Js/cleave.js"></script>
-<script src="/Js/cleave-phone.i18n.js"></script>
-<script>
-    var cleave = new Cleave('.input-element', {
-    phone: true,
-    phoneRegionCode: '{country}'
-});
-    $(`#select-country`).change(function(){
-        cleave.setPhoneRegionCode(this.value);
-        cleave.setRawValue('');
-});
-</script>
+
 <script src="/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
