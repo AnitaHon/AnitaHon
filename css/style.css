@@ -9,18 +9,6 @@ body{
 
 }
 
-
-
-Copy
-html {
-  scroll-behavior: smooth; 
-}
-
-body {
-  background-color: #efeee8;
-  margin: 0; /* Ensure there's no default margin on the body */
-}
-
 header {
   position: sticky; 
   top: 0; 
@@ -29,78 +17,53 @@ header {
   background-color: #efeee8;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Use space-between to evenly space items */
-  padding: 0 20px; /* Add some padding for spacing */
+  justify-content: space-around;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 4;
-}
+  }
 
 #header {
-  display: flex; /* Use flexbox for the header section */
+  margin: 50px;
   align-items: center;  
-  justify-content: space-between; /* Space out the logo and footer */
+  justify-content: space-between;
   width: 100%;  
+
 }
 
-#Links {
+#Links{
   font-family: "Caudex", serif;
   display: flex;  
   align-items: center; 
-  justify-content: space-evenly; /* Use space-evenly for even spacing */
+  justify-content: space-between; 
   width: 40%;  
-}
+  }
 
 .navLinks {
   text-decoration: none;
   color: black;
   transition: transform 1s ease, color 1s ease; 
 }
-
+  
 .navLinks:hover {
   color: #e9896a;
   transform: scale(1.2);
 }
 
-#logo {
-  height: 60px; /* Adjust height as needed */
+#logo,
+#burger {
+  width: auto;
+  height: 60px;
+  }
+
+
+  @font-face {
+    font-family: 'MetroPhotograph';
+    src: url('/AnitaHon/Assets/Font/MetroPhotograph-DemoVersion-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#footer {
-  display: flex;
-  align-items: center;
-  gap: 30px; /* Space between the icons */
-}
 
-#footer .icon {
-  display: flex; /* Make sure icons are displayed in a row */
-  align-items: center; /* Center icon and text vertically */
-}
-
-#footer .icon img {
-  width: auto; /* Icon size */
-  height: 30px;
-  transition: transform 1s ease, opacity 1s ease;
-  opacity: 0.5;
-}
-
-#footer .icon:hover img {
-  transform: scale(1.2); /* Slightly enlarge the icon on hover */
-  opacity: 1;
-}
-
-#footer .icon p {
-  display: none; /* Initially hide the text */
-  margin-left: 10px; /* Space between text and icon */
-  font-size: 14px; /* Font size of the text */
-  color: #fff; /* Text color */
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 5px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 1s ease, margin-left 1s ease;
-}
-
-/* Media Queries */
 @media only screen and (max-width: 900px) {
   #Links {
     display: none; 
@@ -115,4 +78,58 @@ header {
     justify-content: center;
     align-items: center;
   }
+
+}
+
+.work-item a {
+  display: block; /* Make the anchor tag a block element */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+}
+
+
+
+
+#footer {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between the icons */
+  z-index: 1000; /* Ensure it's on top of other content */
+
+}
+
+/* Style each icon container */
+#footer .icon {
+  position: relative;
+  display: inline-block;
+}
+
+/* Initially hide the text */
+#footer .icon p {
+  display: none;
+  margin-right: 10px; /* Space between text and icon */
+  font-size: 14px; /* Font size of the text */
+  color: #fff; /* Text color */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 1s ease, margin-right 1s ease;
+}
+
+/* Show the text when hovering over the icon */
+
+
+/* Optionally, you can add a transition for the icon images as well */
+#footer .icon img {
+  width: auto; /* Icon size */
+  height: 30px;
+  transition: transform 1s ease , opacity 1s ease;
+  opacity: 0.5;
+}
+
+/* Optionally, add a hover effect to the icons */
+#footer .icon:hover img {
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+  opacity: 1;
 }
