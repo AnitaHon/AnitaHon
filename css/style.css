@@ -8,7 +8,13 @@ body{
   background-color: #efeee8;
 
 }
+#Hello{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
 
+}
 
 header {
   position: sticky;
