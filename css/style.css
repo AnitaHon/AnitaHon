@@ -12,7 +12,7 @@ body{
 header {
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 90%;
   height: 70px;
   background-color: #efeee8;
   display: flex;
