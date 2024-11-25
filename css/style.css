@@ -9,6 +9,14 @@ body{
 
 }
 
+.hello{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 header {
   position: sticky;
   top: 0;
