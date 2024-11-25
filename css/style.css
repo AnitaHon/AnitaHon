@@ -9,13 +9,6 @@ body{
 
 }
 
-.hello{
-  width: 50%;
-  display: block;
-  align-items: center;
-  justify-content: space-between;
-
-}
 
 header {
   position: sticky;
