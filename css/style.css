@@ -79,9 +79,10 @@ header {
 
 
 @media only screen and (max-width: 900px) {
-  #footer{
+  #footer {
     display: none;
   }
+
   #Links {
     display: none; 
   } 
