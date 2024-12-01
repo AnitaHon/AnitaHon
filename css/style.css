@@ -68,6 +68,8 @@ header {
   }
 
 
+
+
   @font-face {
     font-family: 'MetroPhotograph';
     src: url('/AnitaHon/Assets/Font/MetroPhotograph-DemoVersion-Regular.otf') format('woff2');
@@ -77,6 +79,10 @@ header {
 
 
 @media only screen and (max-width: 900px) {
+  #footer{
+    bottom: 5px;
+    right: 5px;
+  }
   #Links {
     display: none; 
   } 
