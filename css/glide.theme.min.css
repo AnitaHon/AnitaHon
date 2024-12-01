@@ -3,7 +3,7 @@
     display:block;
     top:50%;
     z-index:2;
-    color:#fff;
+    color:rgba(100, 100, 100, 0.5);
     text-transform:uppercase;
     padding:9px 12px;
     background-color:transparent;
