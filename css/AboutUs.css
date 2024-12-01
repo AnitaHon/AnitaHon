@@ -21,7 +21,7 @@
 .AboutUs {
     background-color: #143f6b;
     width: 100%;
-    height: 80vh;
+    height: auto;
     position: relative; 
     z-index: 0;
     display: flex;       
@@ -172,7 +172,7 @@
     .AboutUs {
         object-fit: cover;
         overflow: hidden;
-        height: 60vh;   
+           
     }
 
     .square {
@@ -183,9 +183,7 @@
 }}
 
 @media only screen and (max-width: 900px) {
-    .AboutUs {
-        
-        height: 600px;}
+    
 
         .square {
             bottom: 80px;
@@ -204,9 +202,7 @@
         left: 0px; }
 }
 @media only screen and (max-width: 550px) {
-    .AboutUs {
-        
-        height: 800px;}
+    
 
     .AboutMe h3{
         font-size: 15px;}
@@ -220,9 +216,7 @@
     .reason{ 
         margin-left: 5%;
     }
-    #AboutUs{
-        height: 40vh;
-    }
+    
     #AboutUs h1{
         font-size: 30px;
     }
