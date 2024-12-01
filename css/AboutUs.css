@@ -117,7 +117,7 @@
     letter-spacing: 1px;
     display: flex; 
     align-items: center;
-    margin: 0; 
+    margin-bottom: 5%;
 }
 
 #Language img {
