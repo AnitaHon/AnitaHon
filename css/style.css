@@ -136,7 +136,7 @@ header {
 
 #footer .navLinks {
   text-decoration: none;
-  color: black;
+  color: #e9896a;
   transition: transform 1s ease, color 1s ease; 
 }
 
