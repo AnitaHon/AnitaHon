@@ -104,10 +104,12 @@ header {
 
 #footer {
   display: flex;
+  position: sticky;
   height: 70px;
   justify-content: flex-end;
   gap: 30px;
   padding: 5%;
+  z-index: 5;
 }
 
 #footer .icon {
