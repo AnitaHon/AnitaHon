@@ -105,11 +105,9 @@ header {
 #footer {
   display: flex;
   height: 70px;
-
-  justify-content: center;
-  left: 5%;
+  justify-content: flex-end;
   gap: 30px;
-  padding: 20px 0;
+  padding: 5%;
 }
 
 #footer .icon {
