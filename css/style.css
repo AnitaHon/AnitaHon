@@ -136,10 +136,10 @@ header {
   color: #333;
 }
 
-#footer a {
-  display: block; /* Make the anchor tag a block element */
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Inherit color from parent */
+#footer .navLinks {
+  text-decoration: none;
+  color: black;
+  transition: transform 1s ease, color 1s ease; 
 }
 
 /* Optionally, add a hover effect to the icons */
