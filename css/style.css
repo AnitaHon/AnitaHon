@@ -104,8 +104,10 @@ header {
 
 #footer {
   display: flex;
+  height: 70px;
+
   justify-content: center;
-  align-items: center;
+  left: 5%;
   gap: 30px;
   padding: 20px 0;
 }
@@ -132,6 +134,12 @@ header {
   margin-top: 5px;
   font-size: 14px;
   color: #333;
+}
+
+#footer a {
+  display: block; /* Make the anchor tag a block element */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
 }
 
 /* Optionally, add a hover effect to the icons */
